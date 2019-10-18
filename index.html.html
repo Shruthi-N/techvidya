@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		
+		/*.respond1{
+			min-height: 500px;
+			min-width: 500px;
+		}*/
+		#pro_name{
+			font-family: 'Luckiest Guy', cursive;
+			color: orange;
+			font-size: 30px;
+		}
+
+		.nav{
+			font-size: 18px
+		}
+		.nav>li>a:hover{
+	    	background-color: transparent;
+	    	font-size: 22px;
+	  	}
+	  #act_nav{
+	  		color: red;
+	  	}
+	  .navi a:hover{
+	    	color: red;
+	  	}
+	  .dropdown:hover .dropdown-menu{
+	  		display: block;
+	  	}
+	  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	            color:red;
+	            background-color: transparent;
+	 	}
+	 	.dropdown-menu{
+	 		font-size: 16px;
+	 	}
+
+	 	#head1{
+	 		display:flex;
+	 	}
+	 	#logo1{
+	 		order: 1;
+	 	}
+	 	#pro_name1{
+	 		order: 2;
+	 		margin-left: 50px;
+	 	}
+
+	 	#div1{
+			position: absolute;
+			border:10px solid pink ;
+			border-width: 200px;
+			border-height: 200px;
+			margin-top: 20px;
+			margin-left: 100px;
+			transition: 1s;
+		}
+		#div1:hover{
+			transform: rotate(-45deg);
+		}
+
+		#div2{
+			position: absolute;
+			bottom: -150px;
+			right: -90px;
+			font-family: 'Open Sans', sans-serif;
+			transition: 3s;
+			
+		}
+		#div2:hover{
+			transform: rotate(45deg);
+			
+		}
+
+		#div3{
+				margin: auto;
+				margin-top: 70px;
+		}
+
+		#wel0{
+			color: green;
+			font-family: 'Kaushan Script', cursive;
+		}
+		#wel{
+			color: orange;
+			font-family: 'Luckiest Guy', cursive;
+
+		}
+
+		.boot01{
+			border-width:5px;
+			border-color: grey;
+			border-style: solid;
+			box-shadow: 0px 0px 5px 5px #cee0df; 
+			min-height: 300px;
+			margin-left: 150px;
+			margin-top: 70px;
+		}
+	.boot02{
+			border-width:5px;
+			border-color: grey;
+			border-style: solid;
+			box-shadow: 0px 0px 5px 5px #cee0df; 
+			min-height: 300px;
+			margin-left: 100px;
+			margin-top: 70px;
+		}
+		.boot11{
+			padding-left: 150px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		#space1{
+			margin-top: 70px;
+			margin: auto;
+		}
+
+		.div4{
+			background-color: #f6f5f7;
+		}
+		.div5{
+			background-color: #f6f5f7;
+			margin-left: -100px;
+			margin-right: -100px;
+		}
+		.boot03{
+			box-shadow: 0px 0px 2px 2px #ffaf03; 
+			height: 250px;
+			width: 300px;
+			margin-top: 70px;
+			margin-right: 45px;
+			margin-left: 45px;
+			padding: 20px; 
+		
+		}
+		#div5{
+			background-color: black;
+			margin-top: 100px;
+			margin-right: 0px;
+			margin-left: 0px;
+		}
+		.fa-facebook {
+	   		color: #133b7d;
+	  		padding-left: 1.8em;
+		}
+		.fa-twitter {
+		   color: #439dd1;
+		   padding-left: 1.8em;
+		}
+		.fa-instagram {
+		   color: #f725a3;
+		   padding-left: 1.8em;
+		}
+		.boot04{
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		#vidpos{
+			font-family: 'Grenze', serif;
+			margin-left: 50px;
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-transprent">  
+		<div class="container-fluid">     
+			<!-- Brand and toggle get grouped for better mobile display -->     
+			<div class="navbar-header"> 
+				 <button type="button" class="navbar-toggle collapsed" datatoggle="collapse" data-target="#bs-example-navbar-collapse-1" ariaexpanded="false">         <span class="sr-only">Toggle navigation</span>         
+				 		  <span class="icon-bar"></span>         
+				 		  <span class="icon-bar"></span>         
+				 		  <span class="icon-bar"></span>       
+				 </button>       
+				 <div id="head1">
+				 	<div id="logo1"><img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Sai_Vidya_Institute_of_Technology_Logo.jpg" height="70px" width="70px"></div>
+				 	<div id="pro_name1"><a class="navbar-brand" href="#"><span id="pro_name">Tech Vidya 2k19</span></a></div>
+				 </div>    
+			</div> 
+			 <ul class="nav navbar-nav navbar-right">         
+			 	<li class="active"><a id="act_nav" href="#">Home</a></li> 
+			 	<li class="navi"><a href="http://saividya.ac.in/" target="_blank">About Us</a></li>
+			 	<li class="navi"><a href="http://localhost/techvidya/ProjectContact.php">Contact Us</a></li>        
+			 	<li class="dropdown navi"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>           
+			 		<ul class="dropdown-menu">             
+			 			<li><a href="http://localhost/techvidya/cse.php">Computer Science</a></li>             
+			 			<li><a href="#">Mechanical</a></li>             
+			 			<li><a href="#">Civil</a></li> 
+			 			<li><a href="#">Electrical and Electronics</a></li> 
+			 			<li><a href="#">Electronics and Communication</a></li> 
+			 			<li><a href="#">MBA</a></li> 
+			 		</ul>         
+			 	</li>       
+			 </ul> 
+			</div><!-- /.navbar-collapse -->   
+		</div><!-- /.container-fluid --> 
+	</nav> <hr>
+
+	<div id="div1">
+	<div id="div2">
+		<h1 style="color: ;">COMPETE</h1><br><br>
+		<h1 style="color: ;">LEARN</h1><br><br>
+		<h1 style="color: ;">ENJOY !!!</h1></div></div>
+	<div id="div3"><img src="https://miro.medium.com/max/3000/1*Ovddw4QXGcjnivnYEV84vQ.png" width="1500px" height="500px" style="width:100%;">
+	</div>
+
+	<h1 align="center" style="margin-top: 70px;"><span id="wel0">Welcome To</span>  <span id="wel">TECH VIDYA 2k19</span></h1>
+	<p style="color: grey;" align="center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</i></p>
+
+	<div class="div4">
+	<br><br><br><h1 align="center"><b>What's <span id="wel">TECH VIDYA</span> ?</b></h1><p style="color: grey" align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+	<div class="row container" id="space1">
+		<div class="col-sm-6">
+			<p style="font-size: 20px;"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br>
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+		    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo<br>
+		    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p><br><br>
+		</div>
+		<div class="col-sm-6">
+			<img src="https://icon-library.net/images/knowledge-sharing-icon/knowledge-sharing-icon-0.jpg" 
+			style="width:100%;">
+		</div>
+		</div>
+	</div>
+
+	<div class="container" margin-top="70px">
+		<br><br><br><h1 align="center"><b>Why Participate?</b></h1><p style="color: grey" align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		<div class="row">
+			<div class="col-md-4 col-sm-12 boot01">
+				<i class="glyphicon glyphicon-user boot11" style="font-size: 50px"></i><br><p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-md-2">
+				
+			</div>
+			<div class="col-md-4 col-sm-12 boot02">
+				<i class="glyphicon glyphicon-wrench boot11" style="font-size: 50px;"></i><br><p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		<br><br>
+		
+		<br><br><h1 align="center"><b>Branches</b></h1><p style="color: grey" align="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+		<div class="container">
+				<div class="row" >
+					<div class="col-md-4 col-sm-6 boot03">
+						<div class="row">
+							<div class="col-xs-4" style="border-radius: 50%;background-color: #b6f246;width: 60px;height: 60px"><i class="glyphicon glyphicon-ok" style=" font-size: 40px; color: white;position: relative;left: -7px;top: 10px"></i></div>
+							<div class="col-xs-8"><p><h3>CSE</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 boot03">
+						<div class="row">
+							<div class="col-xs-4" style="border-radius: 50%;background-color: #b6f246;width: 60px;height: 60px"><i class="glyphicon glyphicon-thumbs-up" style=" font-size: 40px; color: white; position: relative;left: -7px;top: 10px"></i></div>
+							<div class="col-xs-8"><p><h3>MECH</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 boot03">
+						<div class="row">
+							<div class="col-xs-4" style="border-radius: 50%;background-color: #b6f246;width: 60px;height: 60px"><i class="glyphicon glyphicon-piggy-bank" style=" font-size: 40px; color: white; position: relative;left: -7px;top: 10px"></i></div>
+							<div class="col-xs-8"><p><h3>CIV</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col-md-4 col-sm-6 boot03">
+						<div class="row">
+							<div class="col-xs-4" style="border-radius: 50%;background-color: #b6f246;width: 60px;height: 60px"><i class="glyphicon glyphicon-filter" style=" font-size: 40px; color: white; position: relative;left: -7px;top: 10px"></i></div>
+							<div class="col-xs-8"><p><h3>EEE</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 boot03">
+						<div class="row">
+							<div class="col-xs-4" style="border-radius: 50%;background-color: #b6f246;width: 60px;height: 60px"><i class="glyphicon glyphicon-time" style=" font-size: 40px; color: white; position: relative;left: -7px;top: 10px"></i></div>
+							<div class="col-xs-8"><p><h3>ECE</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 boot03">
+						<div class="row">
+							<div class="col-xs-4" style="border-radius: 50%;background-color: #b6f246;width: 60px;height: 60px"><i class="glyphicon glyphicon-wrench" style=" font-size: 40px; color: white; position: relative;left: -7px;top: 10px"></i></div>
+							<div class="col-xs-8"><p><h3>MBA</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p></div>
+						</div>
+					</div>
+				</div>
+			</div></div>
+		<br><br><br><br>
+		
+		<br><br><h1><span id="vidpos">Check out the latest video and poster down here!!</span></h1>
+		<div class="div4">@
+		<div class="row">
+			<div class="col-md-4 col-sm-12 boot04">
+				<video width="560" height="315" controls>
+					<source src="techvidya19.mp4" type="video/mp4">
+				</video>
+				<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/WrkCWmS2Wjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			</div>
+			<div class="col-md-4 col-sm-12 boot04">
+				<img src="poster2k19.jpeg" width="560" height="315">
+			</div>
+		</div>
+		</div>
+
+		<div id="div5" class="container-fluid"><p align="center" style="padding-top: 70px; font-size: 25px;">
+			<span id="wel">TECH VIDYA 2k19</span></p><br><p style="color: white; font-size: 16px;padding-bottom: 70px;" align="center"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</i></p>
+			<p align="center" style="font-size: 20px; padding-bottom: 50px;"><a href="#" class="fa fa-facebook" title="facebook"></a>			<a href="#" class="fa fa-twitter" title="twitter"></a>			<a href="#" class="fa fa-instagram" title="instagram"></a><br><br><br><br><a href="ProjectC.html"><i class="glyphicon glyphicon-chevron-up" style="font-size: 30px; color: white; padding-left: 25px; padding-bottom: 100px;"></i></a></p>
+		</div>
+
+
+	</body>
+</html>
